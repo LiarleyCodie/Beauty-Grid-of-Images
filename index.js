@@ -4,7 +4,7 @@ window.onload = scrolling // call at least once time
 window.onscroll = scrolling
 
 function scrolling() {
-  const viewportHeight = window.innerHeight - window.innerHeight / 3
+  const viewportHeight = window.innerHeight - window.innerHeight / 4
   images.forEach(img => {
     const imgTop = img.getBoundingClientRect().top
     if (imgTop < viewportHeight)
